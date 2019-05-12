@@ -1,0 +1,2 @@
+# Computer-Organization-and-Architecture-Course-Design
+这是东南大学信息学院本科三年级开设的计算机组织与结构课程的后续配套实验课程，包含POC设计和简单CPU设计。以下是我与小组完成的POC与CPU的设计，采用vivado2018.2的设计环境。
