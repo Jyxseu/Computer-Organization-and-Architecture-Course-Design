@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="top_sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="964880000fs"></ZoomStartTime>
+      <ZoomEndTime time="1559380001fs"></ZoomEndTime>
+      <Cursor1Time time="1370000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="111"></NameColumnWidth>
+      <ValueColumnWidth column_width="67"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wave_markers>
+      <marker time="1000000000" label="" />
+      <marker time="1070000000" label="" />
+      <marker time="1110000000" label="" />
+      <marker time="1150000000" label="" />
+      <marker time="1190000000" label="" />
+      <marker time="1230000000" label="" />
+      <marker time="1350000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/top_sim/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/choose" type="logic">
+      <obj_property name="ElementShortName">choose</obj_property>
+      <obj_property name="ObjectShortName">choose</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/DATA" type="array">
+      <obj_property name="ElementShortName">DATA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/uut/u1/ADDR" type="logic">
+      <obj_property name="ElementShortName">ADDR</obj_property>
+      <obj_property name="ObjectShortName">ADDR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/uut/u1/Din" type="array">
+      <obj_property name="ElementShortName">Din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Din[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/uut/u1/RW" type="logic">
+      <obj_property name="ElementShortName">RW</obj_property>
+      <obj_property name="ObjectShortName">RW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/uut/u1/data" type="array">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/uut/u2/Dout" type="array">
+      <obj_property name="ElementShortName">Dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/uut/u2/IRQ" type="logic">
+      <obj_property name="ElementShortName">IRQ</obj_property>
+      <obj_property name="ObjectShortName">IRQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/uut/u2/TR" type="logic">
+      <obj_property name="ElementShortName">TR</obj_property>
+      <obj_property name="ObjectShortName">TR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/uut/u2/PD" type="array">
+      <obj_property name="ElementShortName">PD[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PD[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/uut/u2/RW_state" type="logic">
+      <obj_property name="ElementShortName">RW_state</obj_property>
+      <obj_property name="ObjectShortName">RW_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/uut/u2/SR" type="array">
+      <obj_property name="ElementShortName">SR[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SR[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/uut/u2/BR" type="array">
+      <obj_property name="ElementShortName">BR[7:0]</obj_property>
+      <obj_property name="ObjectShortName">BR[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/uut/u2/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_sim/uut/u3/RDY" type="logic">
+      <obj_property name="ElementShortName">RDY</obj_property>
+      <obj_property name="ObjectShortName">RDY</obj_property>
+   </wvobject>
+</wave_config>

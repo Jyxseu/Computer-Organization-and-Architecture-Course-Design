@@ -1,0 +1,30 @@
+{
+   ExpandedHierarchyInLayout: "",
+   commentid: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port CS -pg 1 -y -180 -defaultsOSRD
+preplace port choose -pg 1 -y -40 -defaultsOSRD
+preplace port CLK -pg 1 -y -230 -defaultsOSRD
+preplace port reset -pg 1 -y -130 -defaultsOSRD
+preplace inst printer_0 -pg 1 -lvl 1 -y -220 -defaultsOSRD
+preplace inst processor_0 -pg 1 -lvl 1 -y -50 -defaultsOSRD
+preplace inst POC_0 -pg 1 -lvl 2 -y -130 -defaultsOSRD
+preplace netloc choose_1 1 0 1 -70
+preplace netloc CLK_1 1 0 2 -60 -320 260
+preplace netloc processor_0_ADDR 1 1 1 230
+preplace netloc POC_0_TR 1 0 3 -40 90 NJ 90 550
+preplace netloc CS_1 1 0 2 -70J -310 250
+preplace netloc POC_0_Dout 1 0 3 -20 60 NJ 60 540
+preplace netloc POC_0_IRQ 1 0 3 -10 70 NJ 70 530
+preplace netloc processor_0_Din 1 1 1 250
+preplace netloc reset_1 1 0 2 -50 50 280
+preplace netloc processor_0_RW 1 1 1 270
+preplace netloc printer_0_RDY 1 1 1 240
+preplace netloc POC_0_PD 1 0 3 -30 80 NJ 80 520
+levelinfo -pg 1 -90 110 400 570 -top -330 -bot 300
+",
+}
+{
+   da_clkrst_cnt: "3",
+}

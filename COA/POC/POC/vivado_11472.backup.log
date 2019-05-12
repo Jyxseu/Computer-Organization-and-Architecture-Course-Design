@@ -1,0 +1,288 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar 20 17:22:58 2019
+# Process ID: 11472
+# Current directory: C:/POC/POC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16712 C:\POC\POC\POC.xpr
+# Log file: C:/POC/POC/vivado.log
+# Journal file: C:/POC/POC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/POC/POC/POC.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 806.492 ; gain = 74.211
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/POC/POC/POC.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/POC/POC/POC.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/POC/POC/POC.srcs/sources_1/new/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TOP
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/POC/POC/POC.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 89fd3d0d0ec842ddae8db4746fcf9883 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.processor [processor_default]
+Compiling architecture behavioral of entity xil_defaultlib.POC [poc_default]
+Compiling architecture behavioral of entity xil_defaultlib.Printer [printer_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sim
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/POC/POC/POC.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -view {C:/POC/POC/top_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/POC/POC/top_sim_behav.wcfg
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 852.340 ; gain = 15.465
+step
+Stopped at time : 1010 ns : File "C:/POC/POC/POC.srcs/sim_1/new/top_sim.vhd" Line 58
+step
+Stopped at time : 1010 ns : File "C:/POC/POC/POC.srcs/sim_1/new/top_sim.vhd" Line 59
+step
+Stopped at time : 1010 ns : File "C:/POC/POC/POC.srcs/sources_1/new/processor.vhd" Line 49
+step
+Stopped at time : 1010 ns : File "C:/POC/POC/POC.srcs/sources_1/new/processor.vhd" Line 51
+step
+Stopped at time : 1010 ns : File "C:/POC/POC/POC.srcs/sources_1/new/processor.vhd" Line 57
+step
+Stopped at time : 1010 ns : File "C:/POC/POC/POC.srcs/sources_1/new/processor.vhd" Line 58
+step
+Stopped at time : 1010 ns : File "C:/POC/POC/POC.srcs/sources_1/new/processor.vhd" Line 59
+step
+Stopped at time : 1010 ns : File "C:/POC/POC/POC.srcs/sources_1/new/processor.vhd" Line 60
+step
+Stopped at time : 1010 ns : File "C:/POC/POC/POC.srcs/sources_1/new/processor.vhd" Line 61
+run 1 us
+run 1 us
+save_wave_config {C:/POC/POC/top_sim_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/POC/POC/POC.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/POC/POC/POC.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/POC/POC/POC.srcs/sources_1/new/POC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity POC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/POC/POC/POC.srcs/sources_1/new/printer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Printer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/POC/POC/POC.srcs/sim_1/new/top_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_sim
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/POC/POC/POC.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 89fd3d0d0ec842ddae8db4746fcf9883 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.processor [processor_default]
+Compiling architecture behavioral of entity xil_defaultlib.POC [poc_default]
+Compiling architecture behavioral of entity xil_defaultlib.Printer [printer_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sim
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/POC/POC/POC.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -view {C:/POC/POC/top_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/POC/POC/top_sim_behav.wcfg
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 890.902 ; gain = 3.863
+run 1 us
+run 1 us
+save_wave_config {C:/POC/POC/top_sim_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/POC/POC/POC.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/POC/POC/POC.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/POC/POC/POC.srcs/sources_1/new/POC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity POC
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/POC/POC/POC.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 89fd3d0d0ec842ddae8db4746fcf9883 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.processor [processor_default]
+Compiling architecture behavioral of entity xil_defaultlib.POC [poc_default]
+Compiling architecture behavioral of entity xil_defaultlib.Printer [printer_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sim
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/POC/POC/POC.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -view {C:/POC/POC/top_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/POC/POC/top_sim_behav.wcfg
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 895.594 ; gain = 0.000
+run 1 us
+save_wave_config {C:/POC/POC/top_sim_behav.wcfg}
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1005.027 ; gain = 109.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/POC/POC/POC.srcs/sources_1/new/TOP.vhd:35]
+INFO: [Synth 8-3491] module 'processor' declared at 'C:/POC/POC/POC.srcs/sources_1/new/processor.vhd:27' bound to instance 'u1' of component 'processor' [C:/POC/POC/POC.srcs/sources_1/new/TOP.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'processor' [C:/POC/POC/POC.srcs/sources_1/new/processor.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'processor' (1#1) [C:/POC/POC/POC.srcs/sources_1/new/processor.vhd:41]
+INFO: [Synth 8-3491] module 'POC' declared at 'C:/POC/POC/POC.srcs/sources_1/new/POC.vhd:27' bound to instance 'u2' of component 'POC' [C:/POC/POC/POC.srcs/sources_1/new/TOP.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'POC' [C:/POC/POC/POC.srcs/sources_1/new/POC.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'POC' (2#1) [C:/POC/POC/POC.srcs/sources_1/new/POC.vhd:45]
+INFO: [Synth 8-3491] module 'Printer' declared at 'C:/POC/POC/POC.srcs/sources_1/new/printer.vhd:28' bound to instance 'u3' of component 'printer' [C:/POC/POC/POC.srcs/sources_1/new/TOP.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'Printer' [C:/POC/POC/POC.srcs/sources_1/new/printer.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'Printer' (3#1) [C:/POC/POC/POC.srcs/sources_1/new/printer.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (4#1) [C:/POC/POC/POC.srcs/sources_1/new/TOP.vhd:35]
+WARNING: [Synth 8-3331] design processor has unconnected port Dout[6]
+WARNING: [Synth 8-3331] design processor has unconnected port Dout[5]
+WARNING: [Synth 8-3331] design processor has unconnected port Dout[4]
+WARNING: [Synth 8-3331] design processor has unconnected port Dout[3]
+WARNING: [Synth 8-3331] design processor has unconnected port Dout[2]
+WARNING: [Synth 8-3331] design processor has unconnected port Dout[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.227 ; gain = 153.633
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.227 ; gain = 153.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.227 ; gain = 153.633
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1390.723 ; gain = 495.129
+15 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1390.723 ; gain = 495.129
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 20 23:31:45 2019...

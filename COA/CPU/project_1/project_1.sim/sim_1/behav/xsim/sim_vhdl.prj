@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/new/ALU.vhd" \
+"../../../../project_1.srcs/sources_1/new/BR.vhd" \
+"../../../../project_1.srcs/sources_1/new/CU.vhd" \
+"../../../../project_1.srcs/sources_1/new/IR.vhd" \
+"../../../../project_1.srcs/sources_1/new/MAR.vhd" \
+"../../../../project_1.srcs/sources_1/new/MBR.vhd" \
+"../../../../project_1.srcs/sources_1/new/PC.vhd" \
+"../../../../project_1.srcs/sources_1/new/TOP.vhd" \
+"../../../../project_1.srcs/sim_1/new/sim.vhd" \
+
+# Do not sort compile order
+nosort

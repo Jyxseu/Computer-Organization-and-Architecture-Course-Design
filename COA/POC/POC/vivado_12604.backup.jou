@@ -1,0 +1,697 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Mar 19 08:10:00 2019
+# Process ID: 12604
+# Current directory: C:/POC/POC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent932 C:\POC\POC\POC.xpr
+# Log file: C:/POC/POC/vivado.log
+# Journal file: C:/POC/POC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/POC/POC/POC.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_design
+open_run impl_1
+launch_simulation
+source top_sim.tcl
+close_sim
+launch_simulation
+source top_sim.tcl
+run 10 us
+close_sim
+launch_simulation
+source top_sim.tcl
+run 5 us
+close_sim
+launch_simulation
+source top_sim.tcl
+run 5 us
+run 5 us
+close_sim
+launch_simulation
+source top_sim.tcl
+run 5 us
+close_sim
+launch_simulation
+source top_sim.tcl
+run 5 us
+run all
+run all
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run 5 us
+run 5 us
+run 5 us
+run 5 us
+current_wave_config {Untitled 6}
+add_wave {{/top_sim/DATA}} 
+step
+step
+step
+current_wave_config {Untitled 6}
+add_wave {{/top_sim/uut/u1/Dout}} 
+current_wave_config {Untitled 6}
+add_wave {{/top_sim/uut/u1/Din}} 
+current_wave_config {Untitled 6}
+add_wave {{/top_sim/uut/u1/IRQ}} 
+current_wave_config {Untitled 6}
+add_wave {{/top_sim/uut/u1/choose}} 
+current_wave_config {Untitled 6}
+add_wave {{/top_sim/uut/u1/ADDR}} 
+current_wave_config {Untitled 6}
+add_wave {{/top_sim/uut/u1/RW}} 
+step
+step
+current_wave_config {Untitled 6}
+add_wave {{/top_sim/uut/u1/data}} 
+close_sim
+launch_simulation
+source top_sim.tcl
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+current_wave_config {Untitled 7}
+add_wave {{/top_sim/uut/u2/ADDR}} 
+current_wave_config {Untitled 7}
+add_wave {{/top_sim/uut/u2/Dout}} 
+current_wave_config {Untitled 7}
+add_wave {{/top_sim/uut/u2/Din}} 
+current_wave_config {Untitled 7}
+add_wave {{/top_sim/uut/u2/RW}} 
+current_wave_config {Untitled 7}
+add_wave {{/top_sim/uut/u2/IRQ}} 
+current_wave_config {Untitled 7}
+add_wave {{/top_sim/uut/u2/RDY}} 
+current_wave_config {Untitled 7}
+add_wave {{/top_sim/uut/u2/TR}} 
+current_wave_config {Untitled 7}
+add_wave {{/top_sim/uut/u2/PD}} 
+current_wave_config {Untitled 7}
+add_wave {{/top_sim/uut/u2/SR}} 
+current_wave_config {Untitled 7}
+add_wave {{/top_sim/uut/u2/BR}} 
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run 5 us
+run 1 ns
+close_sim
+launch_simulation
+source top_sim.tcl
+add_bp {C:/POC/POC/POC.srcs/sim_1/new/top_sim.vhd} 56
+remove_bps -file {C:/POC/POC/POC.srcs/sim_1/new/top_sim.vhd} -line 56
+add_bp {C:/POC/POC/POC.srcs/sim_1/new/top_sim.vhd} 56
+remove_bps -file {C:/POC/POC/POC.srcs/sim_1/new/top_sim.vhd} -line 56
+close_sim
+launch_simulation
+source top_sim.tcl
+close_sim
+launch_simulation
+source top_sim.tcl
+run all
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+close_sim
+launch_simulation
+source top_sim.tcl
+run all
+close_sim
+launch_simulation
+source top_sim.tcl
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run all
+current_wave_config {Untitled 12}
+add_wave {{/top_sim/uut/u1/data}} 
+run 1 us
+close_sim
+launch_simulation
+source top_sim.tcl
+run 1 us
+step
+step
+step
+current_wave_config {Untitled 13}
+add_wave {{/top_sim/uut/u1/Dout}} 
+current_wave_config {Untitled 13}
+add_wave {{/top_sim/uut/u1/Din}} 
+current_wave_config {Untitled 13}
+add_wave {{/top_sim/uut/u1/ADDR}} 
+current_wave_config {Untitled 13}
+add_wave {{/top_sim/uut/u1/IRQ}} 
+current_wave_config {Untitled 13}
+add_wave {{/top_sim/uut/u1/RW}} 
+current_wave_config {Untitled 13}
+add_wave {{/top_sim/uut/u1/data}} 
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+current_wave_config {Untitled 13}
+add_wave {{/top_sim/uut/u2/PD}} 
+current_wave_config {Untitled 13}
+add_wave {{/top_sim/uut/u2/SR}} 
+current_wave_config {Untitled 13}
+add_wave {{/top_sim/uut/u2/BR}} 
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+close_sim
+launch_simulation
+source top_sim.tcl
+step
+step
+step
+step
+current_wave_config {Untitled 14}
+add_wave {{/top_sim/uut/u1/Dout}} 
+current_wave_config {Untitled 14}
+add_wave {{/top_sim/uut/u1/Din}} 
+current_wave_config {Untitled 14}
+add_wave {{/top_sim/uut/u1/data}} 
+current_wave_config {Untitled 14}
+add_wave {{/top_sim/uut/u1/IRQ}} 
+current_wave_config {Untitled 14}
+add_wave {{/top_sim/uut/u1/ADDR}} 
+current_wave_config {Untitled 14}
+add_wave {{/top_sim/uut/u1/RW}} 
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+current_wave_config {Untitled 14}
+add_wave {{/top_sim/uut/u2/PD}} 
+current_wave_config {Untitled 14}
+add_wave {{/top_sim/uut/u2/SR}} 
+current_wave_config {Untitled 14}
+add_wave {{/top_sim/uut/u2/BR}} 
+run 1 us
+close_sim
+launch_simulation
+source top_sim.tcl
+step
+step
+step
+step
+current_wave_config {Untitled 15}
+add_wave {{/top_sim/uut/u1/Din}} 
+current_wave_config {Untitled 15}
+add_wave {{/top_sim/uut/u1/Dout}} 
+current_wave_config {Untitled 15}
+add_wave {{/top_sim/uut/u1/data}} 
+current_wave_config {Untitled 15}
+add_wave {{/top_sim/uut/u1/IRQ}} 
+current_wave_config {Untitled 15}
+add_wave {{/top_sim/uut/u1/ADDR}} 
+current_wave_config {Untitled 15}
+add_wave {{/top_sim/uut/u1/RW}} 
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+current_wave_config {Untitled 15}
+add_wave {{/top_sim/uut/u2/PD}} 
+current_wave_config {Untitled 15}
+add_wave {{/top_sim/uut/u2/SR}} 
+current_wave_config {Untitled 15}
+add_wave {{/top_sim/uut/u2/BR}} 
+current_wave_config {Untitled 15}
+add_wave {{/top_sim/uut/u2/RDY}} 
+current_wave_config {Untitled 15}
+add_wave {{/top_sim/uut/u2/TR}} 
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+close_sim
+launch_simulation
+source top_sim.tcl
+step
+step
+step
+current_wave_config {Untitled 16}
+add_wave {{/top_sim/uut/u1/Dout}} 
+current_wave_config {Untitled 16}
+add_wave {{/top_sim/uut/u1/Din}} 
+current_wave_config {Untitled 16}
+add_wave {{/top_sim/uut/u1/IRQ}} 
+current_wave_config {Untitled 16}
+add_wave {{/top_sim/uut/u1/ADDR}} 
+current_wave_config {Untitled 16}
+add_wave {{/top_sim/uut/u1/RW}} 
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+current_wave_config {Untitled 16}
+add_wave {{/top_sim/uut/u2/PD}} 
+current_wave_config {Untitled 16}
+add_wave {{/top_sim/uut/u2/SR}} 
+current_wave_config {Untitled 16}
+add_wave {{/top_sim/uut/u2/BR}} 
+current_wave_config {Untitled 16}
+add_wave {{/top_sim/uut/u2/TR}} 
+current_wave_config {Untitled 16}
+add_wave {{/top_sim/uut/u2/RDY}} 
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run 1 us
+close_sim
+launch_simulation
+source top_sim.tcl
+step
+step
+step
+current_wave_config {Untitled 17}
+add_wave {{/top_sim/uut/u1/Dout}} 
+current_wave_config {Untitled 17}
+add_wave {{/top_sim/uut/u1/Din}} 
+current_wave_config {Untitled 17}
+add_wave {{/top_sim/uut/u1/data}} 
+current_wave_config {Untitled 17}
+add_wave {{/top_sim/uut/u1/RW}} 
+current_wave_config {Untitled 17}
+add_wave {{/top_sim/uut/u1/ADDR}} 
+current_wave_config {Untitled 17}
+add_wave {{/top_sim/uut/u1/IRQ}} 
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+current_wave_config {Untitled 17}
+add_wave {{/top_sim/uut/u2/PD}} 
+current_wave_config {Untitled 17}
+add_wave {{/top_sim/uut/u2/SR}} 
+current_wave_config {Untitled 17}
+add_wave {{/top_sim/uut/u2/BR}} 
+current_wave_config {Untitled 17}
+add_wave {{/top_sim/uut/u2/TR}} 
+current_wave_config {Untitled 17}
+add_wave {{/top_sim/uut/u2/RDY}} 
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run 1 us
+run 1 us
+run 1 us
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source top_sim.tcl
+step
+step
+step
+step
+current_wave_config {Untitled 18}
+add_wave {{/top_sim/uut/u1/Dout}} 
+current_wave_config {Untitled 18}
+add_wave {{/top_sim/uut/u1/Din}} 
+current_wave_config {Untitled 18}
+add_wave {{/top_sim/uut/u1/data}} 
+current_wave_config {Untitled 18}
+add_wave {{/top_sim/uut/u1/RW}} 
+current_wave_config {Untitled 18}
+add_wave {{/top_sim/uut/u1/ADDR}} 
+step
+step
+step
+step
+current_wave_config {Untitled 18}
+add_wave {{/top_sim/uut/u1/IRQ}} 
+step
+step
+step
+step
+step
+current_wave_config {Untitled 18}
+add_wave {{/top_sim/uut/u2/PD}} 
+current_wave_config {Untitled 18}
+add_wave {{/top_sim/uut/u2/SR}} 
+current_wave_config {Untitled 18}
+add_wave {{/top_sim/uut/u2/SR}} 
+current_wave_config {Untitled 18}
+add_wave {{/top_sim/uut/u2/BR}} 
+current_wave_config {Untitled 18}
+add_wave {{/top_sim/uut/u2/TR}} 
+current_wave_config {Untitled 18}
+add_wave {{/top_sim/uut/u2/RDY}} 
+step
+step
+step
+step
+run 1 us
+run 1 us
+run 1 us
+close_sim
+launch_simulation
+source top_sim.tcl
+update_compile_order -fileset sources_1
+step
+step
+step
+step
+current_wave_config {Untitled 19}
+add_wave {{/top_sim/uut/u1/Din}} 
+current_wave_config {Untitled 19}
+add_wave {{/top_sim/uut/u1/Dout}} 
+current_wave_config {Untitled 19}
+add_wave {{/top_sim/uut/u1/data}} 
+current_wave_config {Untitled 19}
+add_wave {{/top_sim/uut/u1/IRQ}} 
+current_wave_config {Untitled 19}
+add_wave {{/top_sim/uut/u1/RW}} 
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+current_wave_config {Untitled 19}
+add_wave {{/top_sim/uut/u2/TR}} 
+current_wave_config {Untitled 19}
+add_wave {{/top_sim/uut/u2/RDY}} 
+current_wave_config {Untitled 19}
+add_wave {{/top_sim/uut/u2/ADDR}} 
+current_wave_config {Untitled 19}
+add_wave {{/top_sim/uut/u2/SR}} 
+current_wave_config {Untitled 19}
+add_wave {{/top_sim/uut/u2/BR}} 
+current_wave_config {Untitled 19}
+add_wave {{/top_sim/uut/u2/PD}} 
+run 1 us
+run 1 us
+close_sim

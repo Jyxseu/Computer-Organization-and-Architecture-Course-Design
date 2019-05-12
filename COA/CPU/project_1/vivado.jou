@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Apr 26 11:49:54 2019
+# Process ID: 8992
+# Current directory: C:/CPU/CPU/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16096 C:\CPU\CPU\project_1\project_1.xpr
+# Log file: C:/CPU/CPU/project_1/vivado.log
+# Journal file: C:/CPU/CPU/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/CPU/CPU/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/CPU/CPU/project_1/sim_behav.wcfg
+source sim.tcl
+run 60 us
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/CPU/CPU/project_1/project_1.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/CPU/CPU/project_1/project_1.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_sim
+launch_simulation
+open_wave_config C:/CPU/CPU/project_1/sim_behav.wcfg
+source sim.tcl
+run all
+run 60 us
+run 60 us
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/CPU/CPU/project_1/project_1.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/CPU/CPU/project_1/project_1.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+launch_simulation
+open_wave_config C:/CPU/CPU/project_1/sim_behav.wcfg
+source sim.tcl
+run 55 us
+run 1 us
+run 1 us
+run 1 us
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/CPU/CPU/project_1/project_1.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/CPU/CPU/project_1/project_1.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_sim

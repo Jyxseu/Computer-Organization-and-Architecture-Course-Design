@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Apr 24 21:58:50 2019
+# Process ID: 9200
+# Current directory: C:/CPU/CPU/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12632 C:\CPU\CPU\project_1\project_1.xpr
+# Log file: C:/CPU/CPU/project_1/vivado.log
+# Journal file: C:/CPU/CPU/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/CPU/CPU/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'memory' generated file not found 'c:/CPU/CPU/project_1/project_1.srcs/sources_1/ip/memory/memory.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'memory' generated file not found 'c:/CPU/CPU/project_1/project_1.srcs/sources_1/ip/memory/memory_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'memory' generated file not found 'c:/CPU/CPU/project_1/project_1.srcs/sources_1/ip/memory/memory_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'memory' generated file not found 'c:/CPU/CPU/project_1/project_1.srcs/sources_1/ip/memory/memory_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'memory' generated file not found 'c:/CPU/CPU/project_1/project_1.srcs/sources_1/ip/memory/memory_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 809.613 ; gain = 79.660
+update_compile_order -fileset sources_1

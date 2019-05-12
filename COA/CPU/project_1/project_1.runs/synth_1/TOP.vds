@@ -1,0 +1,595 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Apr 26 12:16:45 2019
+# Process ID: 13848
+# Current directory: C:/CPU/CPU/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+# Log file: C:/CPU/CPU/project_1/project_1.runs/synth_1/TOP.vds
+# Journal file: C:/CPU/CPU/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP.tcl -notrace
+Command: synth_design -top TOP -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13264 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 384.867 ; gain = 98.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/TOP.vhd:43]
+INFO: [Synth 8-3491] module 'CU' declared at 'C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/CU.vhd:35' bound to instance 'U1' of component 'CU' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/TOP.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'CU' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/CU.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'CU' (1#1) [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/CU.vhd:46]
+WARNING: [Synth 8-5640] Port 'acc_h' is missing in component declaration [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/TOP.vhd:79]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:7' bound to instance 'U2' of component 'ALU' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/TOP.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:22]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:29]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:30]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:31]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:31]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:31]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:31]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:31]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:31]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:31]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:31]
+INFO: [Synth 8-226] default block is never used [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:88]
+INFO: [Synth 8-226] default block is never used [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:109]
+INFO: [Synth 8-226] default block is never used [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:130]
+INFO: [Synth 8-226] default block is never used [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:151]
+INFO: [Synth 8-226] default block is never used [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:173]
+INFO: [Synth 8-226] default block is never used [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:197]
+INFO: [Synth 8-226] default block is never used [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:221]
+INFO: [Synth 8-226] default block is never used [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:245]
+WARNING: [Synth 8-614] signal 'RESET' is read in the process but is not in the sensitivity list [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:76]
+WARNING: [Synth 8-614] signal 'digital_en_flag' is read in the process but is not in the sensitivity list [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:76]
+WARNING: [Synth 8-614] signal 'temp' is read in the process but is not in the sensitivity list [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:275]
+WARNING: [Synth 8-6014] Unused sequential element x_reg was removed.  [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:302]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (2#1) [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:22]
+INFO: [Synth 8-3491] module 'BR' declared at 'C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/BR.vhd:10' bound to instance 'U3' of component 'BR' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/TOP.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'BR' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/BR.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'BR' (3#1) [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/BR.vhd:19]
+INFO: [Synth 8-3491] module 'IR' declared at 'C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/IR.vhd:10' bound to instance 'U4' of component 'IR' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/TOP.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'IR' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/IR.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'IR' (4#1) [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/IR.vhd:19]
+INFO: [Synth 8-3491] module 'MAR' declared at 'C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/MAR.vhd:14' bound to instance 'U5' of component 'MAR' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/TOP.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'MAR' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/MAR.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'MAR' (5#1) [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/MAR.vhd:25]
+INFO: [Synth 8-3491] module 'MBR' declared at 'C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/MBR.vhd:10' bound to instance 'U6' of component 'MBR' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/TOP.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'MBR' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/MBR.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'MBR' (6#1) [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/MBR.vhd:22]
+INFO: [Synth 8-3491] module 'PC' declared at 'C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/PC.vhd:10' bound to instance 'U7' of component 'PC' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/TOP.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/PC.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'PC' (7#1) [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/PC.vhd:20]
+INFO: [Synth 8-3491] module 'memory' declared at 'C:/CPU/CPU/project_1/project_1.runs/synth_1/.Xil/Vivado-13848-DESKTOP-G4OH6EJ/realtime/memory_stub.vhdl:5' bound to instance 'U8' of component 'memory' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/TOP.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'memory' [C:/CPU/CPU/project_1/project_1.runs/synth_1/.Xil/Vivado-13848-DESKTOP-G4OH6EJ/realtime/memory_stub.vhdl:16]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (8#1) [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/TOP.vhd:43]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[31]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[30]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[29]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[28]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[27]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[26]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[25]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[24]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[23]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[22]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[21]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[20]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[19]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[18]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[17]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[16]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[13]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[12]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[11]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[10]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[9]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[8]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[7]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[5]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[4]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[3]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[2]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[1]
+WARNING: [Synth 8-3331] design PC has unconnected port control_signal[0]
+WARNING: [Synth 8-3331] design PC has unconnected port from_MBR[15]
+WARNING: [Synth 8-3331] design PC has unconnected port from_MBR[14]
+WARNING: [Synth 8-3331] design PC has unconnected port from_MBR[13]
+WARNING: [Synth 8-3331] design PC has unconnected port from_MBR[12]
+WARNING: [Synth 8-3331] design PC has unconnected port from_MBR[11]
+WARNING: [Synth 8-3331] design PC has unconnected port from_MBR[10]
+WARNING: [Synth 8-3331] design PC has unconnected port from_MBR[9]
+WARNING: [Synth 8-3331] design PC has unconnected port from_MBR[8]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[31]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[30]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[29]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[28]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[27]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[26]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[25]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[24]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[23]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[22]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[21]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[20]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[19]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[18]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[17]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[16]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[15]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[14]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[13]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[11]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[10]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[9]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[8]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[7]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[6]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[5]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[4]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[2]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[1]
+WARNING: [Synth 8-3331] design MBR has unconnected port control_signal[0]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[31]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[30]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[29]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[28]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[27]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[26]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[25]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[24]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[23]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[22]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[21]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[20]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[19]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[18]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[17]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[16]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[15]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[14]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[13]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[12]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[11]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[9]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[8]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[7]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[6]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[4]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[3]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[2]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[1]
+WARNING: [Synth 8-3331] design MAR has unconnected port control_signal[0]
+WARNING: [Synth 8-3331] design MAR has unconnected port from_MBR[15]
+WARNING: [Synth 8-3331] design MAR has unconnected port from_MBR[14]
+WARNING: [Synth 8-3331] design MAR has unconnected port from_MBR[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 439.715 ; gain = 153.629
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 439.715 ; gain = 153.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 439.715 ; gain = 153.629
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/CPU/CPU/project_1/project_1.srcs/sources_1/ip/memory/memory/memory_in_context.xdc] for cell 'U8'
+Finished Parsing XDC File [c:/CPU/CPU/project_1/project_1.srcs/sources_1/ip/memory/memory/memory_in_context.xdc] for cell 'U8'
+Parsing XDC File [C:/CPU/CPU/project_1/project_1.srcs/constrs_1/new/xdc.xdc]
+WARNING: [Vivado 12-507] No nets matched 'RESET_IBUF'. [C:/CPU/CPU/project_1/project_1.srcs/constrs_1/new/xdc.xdc:25]
+Finished Parsing XDC File [C:/CPU/CPU/project_1/project_1.srcs/constrs_1/new/xdc.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/CPU/CPU/project_1/project_1.srcs/constrs_1/new/xdc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/TOP_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/CPU/CPU/project_1/project_1.srcs/constrs_1/new/xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 785.703 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 785.703 ; gain = 499.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 785.703 ; gain = 499.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U8. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 785.703 ; gain = 499.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "control_signal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:301]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:312]
+INFO: [Synth 8-5546] ROM "clk_digital" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_digital" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "digital" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "digital" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "digital" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "digital" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "digital" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "digital" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "digital" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "digital" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'digital_reg' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:89]
+WARNING: [Synth 8-327] inferring latch for variable 'digital_en_reg' [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:87]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 785.703 ; gain = 499.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  53 Input     32 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 14    
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 15    
+	  16 Input      8 Bit        Muxes := 4     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  53 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  53 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	  53 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	               13 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   7 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 11    
+	   2 Input     13 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 4     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module BR 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module IR 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module MAR 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module MBR 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element U2/ACC_H_reg was removed.  [C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd:332]
+INFO: [Synth 8-5546] ROM "U1/control_signal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "U2/clk_digital" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP U2/temp0, operation Mode is: A*B.
+DSP Report: operator U2/temp0 is absorbed into DSP U2/temp0.
+DSP Report: Generating DSP U2/0, operation Mode is: A*B.
+DSP Report: operator U2/0 is absorbed into DSP U2/0.
+INFO: [Synth 8-3886] merging instance 'U1/control_signal_reg[10]' (FDRE) to 'U1/control_signal_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U2/digital_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (U2/digital_reg[7]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U2/digital_en_reg[7]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U2/digital_en_reg[6]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U2/digital_en_reg[5]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U2/digital_en_reg[4]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U2/digital_en_reg[3]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U2/digital_en_reg[2]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U2/digital_en_reg[1]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U2/digital_en_reg[0]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U1/control_signal_reg[31]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U1/control_signal_reg[30]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U1/control_signal_reg[29]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U1/control_signal_reg[23]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U1/control_signal_reg[22]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U1/control_signal_reg[21]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U1/control_signal_reg[20]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U1/control_signal_reg[19]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U1/control_signal_reg[18]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (U1/control_signal_reg[13]) is unused and will be removed from module TOP.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 785.703 ; gain = 499.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 825.129 ; gain = 539.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 825.836 ; gain = 539.750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 850.523 ; gain = 564.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 850.523 ; gain = 564.438
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 850.523 ; gain = 564.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 850.523 ; gain = 564.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 850.523 ; gain = 564.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 850.523 ; gain = 564.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 850.523 ; gain = 564.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |memory        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |memory_bbox_0 |     1|
+|2     |BUFG          |     2|
+|3     |CARRY4        |    27|
+|4     |DSP48E1       |     2|
+|5     |LUT1          |    68|
+|6     |LUT2          |    43|
+|7     |LUT3          |    94|
+|8     |LUT4          |    76|
+|9     |LUT5          |    82|
+|10    |LUT6          |    93|
+|11    |MUXF7         |    14|
+|12    |FDRE          |   192|
+|13    |LD            |     7|
+|14    |IBUF          |     2|
+|15    |OBUF          |    16|
++------+--------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   734|
+|2     |  U1     |CU     |   166|
+|3     |  U2     |ALU    |   379|
+|4     |  U3     |BR     |    71|
+|5     |  U4     |IR     |    17|
+|6     |  U5     |MAR    |     8|
+|7     |  U6     |MBR    |    16|
+|8     |  U7     |PC     |    40|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 850.523 ; gain = 564.438
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 850.523 ; gain = 218.449
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 850.523 ; gain = 564.438
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  LD => LDCE: 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 139 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 850.523 ; gain = 575.906
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/CPU/CPU/project_1/project_1.runs/synth_1/TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 850.523 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 26 12:18:11 2019...

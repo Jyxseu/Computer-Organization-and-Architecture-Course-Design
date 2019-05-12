@@ -1,0 +1,81 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Apr 26 12:19:35 2019
+| Host         : DESKTOP-G4OH6EJ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    20 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      6 |            1 |
+|     14 |            1 |
+|    16+ |           11 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             114 |           28 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              72 |            9 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             218 |           38 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+----------------------+-----------------------------+------------------+----------------+
+|   Clock Signal   |     Enable Signal    |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++------------------+----------------------+-----------------------------+------------------+----------------+
+|  CLK_IBUF_BUFG   | U1/E[0]              | U1/SR[0]                    |                1 |              2 |
+|  U2/clk_digital  |                      |                             |                1 |              6 |
+|  RESET_IBUF_BUFG |                      |                             |                6 |             14 |
+|  CLK_IBUF_BUFG   | U1/MAR_out_reg[7]    | U1/control_signal_reg[28]_0 |                2 |             16 |
+|  CLK_IBUF_BUFG   | U1/Q[1]              | U1/control_signal_reg[28]_0 |                2 |             16 |
+|  CLK_IBUF_BUFG   | RESET_IBUF_BUFG      | U7/temp[7]_i_1_n_0          |                5 |             16 |
+|  CLK_IBUF_BUFG   |                      | U2/clk_digital_0            |                3 |             24 |
+|  CLK_IBUF_BUFG   | U1/E[0]              | U1/SR[1]                    |                4 |             30 |
+|  CLK_IBUF_BUFG   | U1/MBR_out_reg[15]_0 | U1/control_signal_reg[28]_0 |                3 |             32 |
+|  CLK_IBUF_BUFG   | U1/temp1             | U1/temp1_reg[0]             |                7 |             32 |
+|  CLK_IBUF_BUFG   | RESET_IBUF_BUFG      | U1/to_ALU_reg[0]            |                5 |             32 |
+|  CLK_IBUF_BUFG   | U1/control_signal_0  | U1/control_signal_reg[28]_0 |                9 |             42 |
+|  CLK_IBUF_BUFG   |                      | U1/control_signal_reg[28]_0 |                6 |             48 |
+|  CLK_IBUF_BUFG   |                      |                             |               21 |             94 |
++------------------+----------------------+-----------------------------+------------------+----------------+
+
+

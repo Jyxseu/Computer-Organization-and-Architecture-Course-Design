@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar 20 17:22:58 2019
+# Process ID: 11472
+# Current directory: C:/POC/POC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16712 C:\POC\POC\POC.xpr
+# Log file: C:/POC/POC/vivado.log
+# Journal file: C:/POC/POC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/POC/POC/POC.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/POC/POC/top_sim_behav.wcfg
+source top_sim.tcl
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run 1 us
+run 1 us
+save_wave_config {C:/POC/POC/top_sim_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/POC/POC/top_sim_behav.wcfg
+source top_sim.tcl
+run 1 us
+run 1 us
+save_wave_config {C:/POC/POC/top_sim_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/POC/POC/top_sim_behav.wcfg
+source top_sim.tcl
+run 1 us
+save_wave_config {C:/POC/POC/top_sim_behav.wcfg}
+synth_design -rtl -name rtl_1
+close_sim

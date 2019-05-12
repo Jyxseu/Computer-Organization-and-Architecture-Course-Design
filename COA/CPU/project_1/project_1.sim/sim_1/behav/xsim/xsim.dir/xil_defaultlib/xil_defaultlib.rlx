@@ -1,0 +1,15 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/CPU/CPU/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/CPU/CPU/project_1/project_1.srcs/sim_1/new/sim.vhd,1556108929,vhdl,,,,sim,,,,,,,,
+C:/CPU/CPU/project_1/project_1.srcs/sources_1/ip/memory/sim/memory.v,1556170728,verilog,,,,memory,,,,,,,,
+C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/ALU.vhd,1556252190,vhdl,,,,alu,,,,,,,,
+C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/BR.vhd,1555749601,vhdl,,,,br,,,,,,,,
+C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/CU.vhd,1556171387,vhdl,,,,cu,,,,,,,,
+C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/IR.vhd,1555749695,vhdl,,,,ir,,,,,,,,
+C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/MAR.vhd,1555749779,vhdl,,,,mar,,,,,,,,
+C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/MBR.vhd,1555749863,vhdl,,,,mbr,,,,,,,,
+C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/PC.vhd,1555779055,vhdl,,,,pc,,,,,,,,
+C:/CPU/CPU/project_1/project_1.srcs/sources_1/new/TOP.vhd,1555942631,vhdl,,,,top,,,,,,,,
